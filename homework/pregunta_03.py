@@ -15,3 +15,14 @@ def pregunta_03():
     [('A', 53), ('B', 36), ('C', 27), ('D', 31), ('E', 67)]
 
     """
+    suma={}
+    with open("files\input\data.csv","r") as file:
+        for linea in file:
+            columnas=linea.strip().split("\t")
+            letra=columnas[0]
+            if letra in suma:
+                suma[letra]+=int(columnas[1])
+            else:
+                suma[letra]=int(columnas[1])
+    return sorted(suma.items())
+

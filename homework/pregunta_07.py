@@ -25,3 +25,14 @@ def pregunta_07():
      (9, ['A', 'B', 'E', 'A', 'A', 'C'])]
 
     """
+    conteo={}
+    with open ("files\input\data.csv","r") as file:
+        for linea in file:
+            columnas=linea.strip().split("\t")
+            letra=columnas[0]
+            numero=int(columnas[1])
+            if numero in conteo:
+                conteo[numero].append(letra)
+            else:
+                conteo[numero]=[letra]
+    return sorted(conteo.items())
