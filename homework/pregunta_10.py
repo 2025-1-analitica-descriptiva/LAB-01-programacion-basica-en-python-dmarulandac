@@ -22,7 +22,7 @@ def pregunta_10():
     """
     resultado = []
 
-    with open("files\input\data.csv", "r") as file:
+    with open("files/input/data.csv", "r") as file:
         for linea in file:
             partes = linea.strip().split("\t")
             letra = partes[0]

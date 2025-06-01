@@ -17,7 +17,7 @@ def pregunta_11():
 
     """
     suma= {}
-    with open("files\input\data.csv", "r") as file:
+    with open("files/input/data.csv", "r") as file:
         for linea in file:
             columnas = linea.strip().split("\t")
             numero=int(columnas[1])

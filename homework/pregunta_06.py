@@ -27,7 +27,7 @@ def pregunta_06():
 
     """
     valores = {}
-    with open("files\input\data.csv", "r") as file:
+    with open("files/input/data.csv", "r") as file:
         for linea in file:
             columnas = linea.strip().split("\t")
             # Verifica que hay al menos 5 columnas

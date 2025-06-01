@@ -26,7 +26,7 @@ def pregunta_09():
      
     """
     conteo_claves = {}
-    with open("files\input\data.csv", "r") as file:
+    with open("files/input/data.csv", "r") as file:
         for linea in file:
             partes = linea.strip().split("\t")
 

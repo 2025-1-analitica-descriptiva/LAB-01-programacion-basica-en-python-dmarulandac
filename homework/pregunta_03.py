@@ -16,7 +16,7 @@ def pregunta_03():
 
     """
     suma={}
-    with open("files\input\data.csv","r") as file:
+    with open("files/input/data.csv","r") as file:
         for linea in file:
             columnas=linea.strip().split("\t")
             letra=columnas[0]

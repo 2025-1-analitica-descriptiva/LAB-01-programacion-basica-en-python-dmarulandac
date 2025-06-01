@@ -17,7 +17,7 @@ def pregunta_02():
     """
     #Lo que se debe hacer es un contador por cada una de las letras
     conteo={}
-    with open ("files\input\data.csv","r") as file:
+    with open ("files/input/data.csv","r") as file:
         for linea in file:
             columnas=linea.strip().split("\t")
             letra=columnas[0]
